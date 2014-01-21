@@ -1,0 +1,5 @@
+{
+	"require": {
+		"massivescale/celery-php": "dev-php-amqplib"
+	}
+}

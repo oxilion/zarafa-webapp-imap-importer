@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE plugin SYSTEM "manifest.dtd">
+<plugin version="2">
+	<info>
+		<version>0.3</version>
+		<name>Imapsync</name>
+		<title>IMAP Importer Plugin</title>
+		<author>Oxilion B.V.</author>
+		<authorURL>http://www.oxilion.nl</authorURL>
+		<description>Import your IMAP from zarafa webapp</description>
+	</info>
+	<config>
+		<configfile>config.php</configfile>
+	</config>
+	<components>
+		<component>
+			<files>
+				<server>
+					<serverfile>php/plugin.imapsync.php</serverfile>
+					<serverfile type="module" module="imapsyncmodule">php/class.imapsyncmodule.php</serverfile>
+				</server>
+				<client>
+					<clientfile load="release">js/ImapsyncPlugin.js</clientfile>
+					<clientfile load="release">js/settings/SettingsImapsyncCategory.js</clientfile>
+					<clientfile load="release">js/settings/SettingsImapsyncWidget.js</clientfile>
+					<clientfile load="release">js/settings/ImapsyncPanel.js</clientfile>
+					<clientfile load="release">js/data/ImapsyncResponseHandler.js</clientfile>
+					<clientfile load="release">js/ABOUT.js</clientfile>
+					<clientfile load="source">js/ImapsyncPlugin.js</clientfile>
+					<clientfile load="source">js/settings/SettingsImapsyncCategory.js</clientfile>
+					<clientfile load="source">js/settings/SettingsImapsyncWidget.js</clientfile>
+					<clientfile load="source">js/settings/ImapsyncPanel.js</clientfile>
+					<clientfile load="source">js/data/ImapsyncResponseHandler.js</clientfile>
+					<clientfile load="source">js/ABOUT.js</clientfile>
+				</client>
+				<resources>
+					<resourcefile load="release">resources/css/imapsync.css</resourcefile>
+					<resourcefile load="debug">resources/css/imapsync.css</resourcefile>
+					<resourcefile load="source">resources/css/imapsync.css</resourcefile>
+				</resources>
+			</files>
+		</component>
+	</components>
+</plugin>

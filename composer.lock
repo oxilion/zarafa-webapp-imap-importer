@@ -1,0 +1,113 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "af772db3cccdfcbdcd316768dd19befe",
+    "packages": [
+        {
+            "name": "massivescale/celery-php",
+            "version": "dev-php-amqplib",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gjedeer/celery-php.git",
+                "reference": "a65eeb5540fad58b419152a9bcfec3bf3438f810"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gjedeer/celery-php/zipball/a65eeb5540fad58b419152a9bcfec3bf3438f810",
+                "reference": "a65eeb5540fad58b419152a9bcfec3bf3438f810",
+                "shasum": ""
+            },
+            "require": {
+                "videlalvaro/php-amqplib": ">=2.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "celery.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "GDR!",
+                    "email": "info@massivescale.net",
+                    "homepage": "http://massivescale.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP client for Celery task queue",
+            "homepage": "https://github.com/gjedeer/celery-php/",
+            "keywords": [
+                "AMQP",
+                "celery",
+                "cron",
+                "python",
+                "queue",
+                "task"
+            ],
+            "time": "2014-01-07 19:00:07"
+        },
+        {
+            "name": "videlalvaro/php-amqplib",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/videlalvaro/php-amqplib.git",
+                "reference": "682e3365f51c455f7a0bd32173d79922416fe9f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/videlalvaro/php-amqplib/zipball/682e3365f51c455f7a0bd32173d79922416fe9f0",
+                "reference": "682e3365f51c455f7a0bd32173d79922416fe9f0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PhpAmqpLib": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Alvaro Videla"
+                }
+            ],
+            "description": "This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
+            "homepage": "https://github.com/videlalvaro/php-amqplib/",
+            "keywords": [
+                "message",
+                "queue",
+                "rabbitmq"
+            ],
+            "time": "2013-02-13 19:43:51"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "massivescale/celery-php": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
