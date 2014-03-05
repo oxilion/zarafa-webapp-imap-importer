@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: zarafa-webap-plugin-passwd\n"
+"POT-Creation-Date: 2014-03-04 13:53+0100\n"
+"PO-Revision-Date: 2014-03-04 14:34+0100\n"
+"Last-Translator: Sander Hoentjen <sander@hoentjen.eu>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+# js/settings/ImapsyncPanel.js:46:
+msgid "IMAP server"
+msgstr "IMAP server"
+
+# js/settings/ImapsyncPanel.js:54:
+msgid "IMAP username"
+msgstr "IMAP gebruikersnaan"
+
+
+# js/settings/ImapsyncPanel.js:62:
+msgid "IMAP password"
+msgstr "IMAP wachtwoord"
+
+
+# js/settings/ImapsyncPanel.js:70:
+msgid "IMAP encryption"
+msgstr "IMAP encryptie"

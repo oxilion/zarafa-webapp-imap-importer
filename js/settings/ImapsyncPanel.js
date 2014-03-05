@@ -43,7 +43,7 @@ Zarafa.plugins.imapsync.settings.ImapsyncPanel = Ext.extend(Ext.form.FormPanel, 
 			items : [{
 				xtype : 'textfield',
 				name : 'imap_server',
-				fieldLabel : 'IMAP server',
+				fieldLabel : dgettext("plugin_imapsync", 'IMAP server'),
 				listeners : {
 					change : this.onFieldChange,
 					scope : this
@@ -51,7 +51,7 @@ Zarafa.plugins.imapsync.settings.ImapsyncPanel = Ext.extend(Ext.form.FormPanel, 
 			}, {
 				xtype : 'textfield',
 				name : 'imap_username',
-				fieldLabel : 'IMAP username',
+				fieldLabel : dgettext("plugin_imapsync", 'IMAP username'),
 				listeners : {
 					change : this.onFieldChange,
 					scope : this
@@ -59,7 +59,7 @@ Zarafa.plugins.imapsync.settings.ImapsyncPanel = Ext.extend(Ext.form.FormPanel, 
 			}, {
 				xtype : 'textfield',
 				name : 'imap_password',
-				fieldLabel : 'IMAP password',
+				fieldLabel : dgettext("plugin_imapsync", 'IMAP password'),
 				listeners : {
 					change : this.onFieldChange,
 					scope : this
@@ -67,7 +67,7 @@ Zarafa.plugins.imapsync.settings.ImapsyncPanel = Ext.extend(Ext.form.FormPanel, 
 			}, {
 				xtype: 'combo',
 				hiddenName : 'imap_encryption',
-				fieldLabel: 'IMAP encryption',
+				fieldLabel: dgettext("plugin_imapsync", 'IMAP encryption'),
 				renderTo: document.body,
 				mode: 'local',
 				triggerAction: 'all',
