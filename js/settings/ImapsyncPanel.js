@@ -76,7 +76,7 @@ Zarafa.plugins.imapsync.settings.ImapsyncPanel = Ext.extend(Ext.form.FormPanel, 
 					data: [
 						['tls', 'STARTTLS'],
 						['ssl', 'SSL'],
-						['none', 'off'],
+						['none', 'off']
 					],
 					id: 0,
 					fields: ['value', 'text']
