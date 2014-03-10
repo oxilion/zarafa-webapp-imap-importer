@@ -123,7 +123,7 @@ class ImapsyncModule extends Module
 		// send feedback to client
 		$this->sendFeedback(true, array(
 				'info' => array(
-				'display_message' => _('IMAP server sync is starting.')
+				'display_message' => _('IMAP server sync is starting. The status email will be send after the process is finished. (This depends on the amount of emails that have to be synced.)')
 			)
 		));
 
