@@ -8,4 +8,4 @@ define('PLUGIN_IMAPSYNC_ZARAFA_IMAP_ENCRYPTION', 'off');
 // "from" email-address for sync finished e-mail message
 define('PLUGIN_IMAPSYNC_ZARAFA_FEEDBACK_FROM', 'zarafa@example.org');
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once dirname($_SERVER['SCRIPT_FILENAME']).'/plugins/imapsync/vendor/autoload.php';

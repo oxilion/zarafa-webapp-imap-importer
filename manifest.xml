@@ -23,12 +23,7 @@
 					<serverfile type="module" module="imapsyncmodule">php/class.imapsyncmodule.php</serverfile>
 				</server>
 				<client>
-					<clientfile load="release">js/ImapsyncPlugin.js</clientfile>
-					<clientfile load="release">js/settings/SettingsImapsyncCategory.js</clientfile>
-					<clientfile load="release">js/settings/SettingsImapsyncWidget.js</clientfile>
-					<clientfile load="release">js/settings/ImapsyncPanel.js</clientfile>
-					<clientfile load="release">js/data/ImapsyncResponseHandler.js</clientfile>
-					<clientfile load="release">js/ABOUT.js</clientfile>
+					<clientfile load="release">js/imapsync.js</clientfile>
 					<clientfile load="source">js/ImapsyncPlugin.js</clientfile>
 					<clientfile load="source">js/settings/SettingsImapsyncCategory.js</clientfile>
 					<clientfile load="source">js/settings/SettingsImapsyncWidget.js</clientfile>
