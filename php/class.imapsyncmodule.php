@@ -108,9 +108,21 @@ class ImapsyncModule extends Module
 		$destination = array(
 			'host' => PLUGIN_IMAPSYNC_ZARAFA_IMAP_SERVER,
 			'user' => $_SESSION['username'],
-			'password' => $_SESSION['password'],
 			'encryption' => PLUGIN_IMAPSYNC_ZARAFA_IMAP_ENCRYPTION,
 		);
+
+		$password = $_SESSION['password'];
+
+		if(function_exists("openssl_decrypt")) {
+			// In PHP 5.3.3 the iv parameter was added
+			if(version_compare(phpversion(), "5.3.3", "<")) {
+				$password = openssl_decrypt($password,"des-ede3-cbc",PASSWORD_KEY,0);
+			} else {
+				$password = openssl_decrypt($password,"des-ede3-cbc",PASSWORD_KEY,0,PASSWORD_IV);
+			}
+		}
+
+		$destination['password'] = $password;
 
 		$options = array(
 			'feedback_from_email' => PLUGIN_IMAPSYNC_ZARAFA_FEEDBACK_FROM,
