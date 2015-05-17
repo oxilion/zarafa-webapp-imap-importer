@@ -120,6 +120,8 @@ class ImapsyncModule extends Module
 			} else {
 				$password = openssl_decrypt($password,"des-ede3-cbc",PASSWORD_KEY,0,PASSWORD_IV);
 			}
+		} elseif(function_exists("mcrypt_decrypt")) {
+			$password = rtrim(mcrypt_decrypt(MCRYPT_TRIPLEDES, PASSWORD_KEY, base64_decode($password), MCRYPT_MODE_CBC, PASSWORD_IV), "\0");
 		}
 
 		$destination['password'] = $password;
